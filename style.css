@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f5f5;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px;
+  background: #0f172a;
+  color: white;
+}
+
+.buttons a {
+  margin: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.projects {
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+}

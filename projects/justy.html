@@ -27,12 +27,17 @@
 <body>
 
 <section class="project-hero">
-  <h1>Justy Business Analytics</h1>
-  <p>End-to-End Data Pipeline & Sales Performance Dashboard</p>
 
-  <div class="buttons">
-    <a href="https://github.com/namora-fernando/justy-sales-dashboard" target="_blank">Dashboard Repo</a>
-    <a href="https://github.com/namora-fernando/justy-transactions-scraper" target="_blank">Scraper Repo</a>
+  <div class="toggle" onclick="toggleTheme()">🌙</div>
+
+  <div class="text">
+    <h1>Justy Business Analytics</h1>
+    <p>End-to-End Data Pipeline & Sales Performance Dashboard</p>
+
+    <div class="buttons">
+      <a href="https://github.com/namora-fernando/justy-sales-dashboard" target="_blank">Dashboard Repo</a>
+      <a href="https://github.com/namora-fernando/justy-transactions-scraper" target="_blank">Scraper Repo</a>
+    </div>
   </div>
 </section>
 
@@ -130,6 +135,24 @@
   </ul>
 
 </section>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+
+  if (document.body.classList.contains("light")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+window.onload = function () {
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+  }
+};
+</script>
 
 </body>
 </html>

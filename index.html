@@ -5,38 +5,54 @@
   <title>Fernando Namora</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <a href="#about">About</a>
+  <a href="#projects">Featured</a>
+  <a href="#additional">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</div>
 
 <!-- HERO -->
 <section class="hero">
+
+  <div class="toggle" onclick="toggleTheme()">🌙</div>
   <h1>Fernando Namora</h1>
-  <p>Data Science | Machine Learning | Data Engineering</p>
+  <p>Data Analyst focused on Machine Learning & Data Pipelines</p>
 
   <div class="buttons">
-    <a href="https://github.com/namora-fernando" target="_blank">GitHub</a>
     <a href="assets/Fernando_Namora_CV.pdf" download>Download CV</a>
   </div>
+
+  <p class="tagline">
+    I build end-to-end data solutions, from pipelines to predictive models that drive real business decisions.
+  </p>
+
 </section>
 
 <!-- ABOUT -->
-<section class="about">
+<section id="about" class="about">
   <h2>About Me</h2>
 
   <p>
-    I have a background in Mathematics from Universitas Indonesia and focus on building practical data solutions using real-world datasets.
-  </p>
-
-  <p> 
-    I build end-to-end data solutions, from raw data pipelines to machine learning models and dashboards, working with real-world datasets to generate actionable business insights. 
+    Mathematics graduate with experience in building data-driven solutions across analytics, machine learning, and data pipelines.
   </p>
 
   <p>
-    My work combines analytics, machine learning, and data engineering workflows, from raw data pipelines to deployed models and dashboards.
+    Focused on transforming raw data into actionable insights, from exploratory analysis and modeling to deploying end-to-end systems for real business use.
   </p>
+
 </section>
 
 <!-- FEATURED PROJECTS -->
-<section class="projects">
+<section id="projects" class="projects">
   <h2>Featured Projects</h2>
 
   <div class="featured-grid">
@@ -46,18 +62,22 @@
         <a href="projects/order-guardian.html">
           Order Guardian (E-commerce Cancellation Prediction)
         </a>
+        <p class="badge">⭐ Flagship Project</p>
       </h3>
 
       <p class="desc">
-        Built an end-to-end predictive system to identify high-risk e-commerce orders using transactional data.
-        Designed a full pipeline from data ingestion, feature engineering, and model training to deployment and business dashboarding.
+        Led a 4-member team to build an end-to-end predictive system identifying high-risk e-commerce orders from transactional data.
+
+        Developed a full pipeline from data ingestion and feature engineering to model deployment in an interactive application.
       </p>
 
       <p class="impact">
-        Impact: Enables proactive risk detection and supports operational decision-making.
+        Impact: Enables early detection of high-risk orders, improving operational decisions and reducing potential losses.
       </p>
 
-      <span>Python • Airflow • Scikit-learn • Streamlit • Tableau</span>
+      <span>
+        Python • Airflow • Docker • Great Expectations • Scikit-learn • Feature Engineering • Streamlit • Hugging Face • Tableau • SQL
+      </span>
 
       <div class="links">
         <a href="https://huggingface.co/spaces/Heizsenberg/order-guardian" target="_blank">Live Demo</a>
@@ -73,14 +93,16 @@
       </h3>
 
       <p class="desc">
-      Built an end-to-end data pipeline for e-commerce monitoring using Airflow, Great Expectations, and Elasticsearch.
+        Built an end-to-end data pipeline to monitor e-commerce sales performance and customer retention.
+
+        Designed ETL workflows using Airflow, implemented data validation with Great Expectations, and delivered insights through Elasticsearch-Kibana dashboards.
       </p>
 
       <p class="impact">
       Impact: Enables automated data processing and continuous business monitoring for sales and customer retention.
       </p>
 
-      <span>Python • Airflow • Elasticsearch • Kibana • Docker • Great Expectations</span>
+      <span>Python • Airflow • Elasticsearch • Kibana • Docker • Great Expectations • SQL</span>
 
       <div class="links">
         <a href="https://github.com/namora-fernando/ecommerce-sales-retention-monitoring-pipeline" target="_blank">View Code</a>
@@ -137,7 +159,8 @@
 </section>
 
 <!-- ADDITIONAL PROJECTS -->
-<section class="additional-projects">
+<section id="additional" class="additional-projects">
+
   <h2>Additional Projects</h2>
 
   <div class="grid">
@@ -215,28 +238,42 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section class="experience">
+<section id="experience" class="experience">
+
   <h2>Experience</h2>
 
   <div class="grid">
 
     <div class="card">
-      <h3>Data Operations & Analytics Support</h3>
+      <h3>Data Operations & Sales Analytics Support</h3>
       <p>ECU Worldwide</p>
-      <p>Analyzed booking trends and built Excel dashboards for customer segmentation and route performance.</p>
+
+      <ul>
+        <li>Analyzed booking volume and customer demand across trade lanes to support sales planning and performance optimization</li>
+        <li>Built Excel dashboards for customer segmentation and route performance analysis</li>
+        <li>Identified high-value shipping lanes to improve conversion and revenue opportunities</li>
+        <li>Collaborated cross-functionally to ensure data accuracy and improve operational efficiency</li>
+      </ul>
     </div>
 
     <div class="card">
-      <h3>Actuarial Data Analyst</h3>
+      <h3>Actuarial Data & Pricing Analyst</h3>
       <p>PT Asuransi Simas Jiwa</p>
-      <p>Built pricing models and automated Excel tools for insurance product analysis.</p>
+
+      <ul>
+        <li>Developed pricing models using risk-based actuarial methods and historical data</li>
+        <li>Built automated Excel tools (VBA) for premium simulation and internal reporting</li>
+        <li>Improved reporting efficiency and reduced manual processing time</li>
+        <li>Collaborated with IT during UAT to validate data flows and system enhancements</li>
+      </ul>
     </div>
 
   </div>
 </section>
 
 <!-- EDUCATION -->
-<section class="education">
+<section id="education" class="education">
+
   <h2>Education</h2>
 
   <div class="grid">
@@ -244,6 +281,13 @@
     <div class="card">
       <h3>Universitas Indonesia</h3>
       <p>Bachelor of Mathematics • GPA: 3.77 / 4.00</p>
+
+      <ul>
+        <li>Specialized in Statistics, Regression Analysis, and Actuarial Mathematics</li>
+        <li>Teaching Assistant for Statistics, Financial Mathematics, and Calculus</li>
+        <li>Mathematical Learning Center Assistant (academic mentoring & problem solving)</li>
+        <li>2nd Place - Statistics Team Competition (LOGIKA UI)</li>
+      </ul>
     </div>
 
     <div class="card">
@@ -262,52 +306,73 @@
 </section>
 
 <!-- CERTIFICATIONS -->
-<section class="certifications">
+<section id="certifications" class="certifications">
+
   <h2>Certifications</h2>
 
   <div class="grid">
 
     <div class="card">
-      <p><strong>BNSP Certified Data Analyst</strong></p>
+      <p>
+        <strong>
+          <a href="https://drive.google.com/file/d/1SjHZ2Mke8bSS2M7MqyxYQujpFwU1jrJF/view" target="_blank">
+            BNSP Certified Data Analyst
+          </a>
+        </strong>
+      </p>
       <span>National professional certification in data analysis</span>
     </div>
 
     <div class="card">
-      <p><strong>Hacktiv8 Data Science Bootcamp</strong></p>
-      <span>Final Score: 97.34% (Hands-on projects in ML, analytics, and data engineering)</span>
+      <p>
+        <strong>
+          <a href="https://drive.google.com/file/d/1qPF958oAiu2BvctToTT0fpte44g1cBb7/view?usp=sharing" target="_blank">
+            Hacktiv8 Data Science Bootcamp
+          </a>
+        </strong>
+      </p>
+      <span>
+        Final Score: 97.34% (Hands-on projects in ML, analytics, and data engineering)
+      </span>
     </div>
 
     <div class="card">
-      <p><strong>HackerRank SQL (Advanced)</strong></p>
+      <p>
+        <strong>
+          <a href="https://www.hackerrank.com/certificates/c2a5965c3aa8" target="_blank">
+            HackerRank SQL (Advanced)
+          </a>
+        </strong>
+      </p>
       <span>
         Proficient in complex queries, joins, window functions, and analytical SQL
       </span>
     </div>
 
   </div>
-
 </section>
 
 <!-- SKILLS -->
-<section class="skills">
+<section id="skills" class="skills">
+
   <h2>Skills</h2>
 
   <div class="grid">
 
     <div class="card">
-      <h3>Machine Learning</h3>
+      <h3>Machine Learning & Predictive Modeling</h3>
       <p>Predictive modeling, feature engineering, and evaluation.</p>
       <span>Scikit-learn • TensorFlow • NLP</span>
     </div>
 
     <div class="card">
-      <h3>Data Engineering</h3>
+      <h3>Data Pipelines & Workflow Orchestration</h3>
       <p>Pipeline design, orchestration, and data validation.</p>
       <span>Airflow • Docker • PostgreSQL • Great Expectations</span>
     </div>
 
     <div class="card">
-      <h3>Analytics & Visualization</h3>
+      <h3>Analytics & Business Intelligence</h3>
       <p>Exploration, insight generation, and dashboarding.</p>
       <span>Pandas • Tableau • Power BI • Kibana</span>
     </div>
@@ -316,7 +381,8 @@
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
+<section id="contact" class="contact">
+
   <h2>Contact</h2>
 
   <div class="contact-links">
@@ -327,6 +393,24 @@
   </div>
 
 </section>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+
+  if (document.body.classList.contains("light")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+window.onload = function () {
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+  }
+};
+</script>
 
 </body>
 </html>

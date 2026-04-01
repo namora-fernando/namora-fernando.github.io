@@ -27,11 +27,16 @@
 <body>
 
 <section class="project-hero">
-  <h1>E-Commerce Monitoring Pipeline</h1>
-  <p>End-to-End Data Engineering Pipeline for Sales & Retention Monitoring</p>
 
-  <div class="buttons">
-    <a href="https://github.com/namora-fernando/ecommerce-sales-retention-monitoring-pipeline" target="_blank">GitHub Repo</a>
+  <div class="toggle" onclick="toggleTheme()">🌙</div>
+
+  <div class="text">
+    <h1>E-Commerce Monitoring Pipeline</h1>
+    <p>End-to-End Data Engineering Pipeline for Sales & Retention Monitoring</p>
+
+    <div class="buttons">
+      <a href="https://github.com/namora-fernando/ecommerce-sales-retention-monitoring-pipeline" target="_blank">GitHub Repo</a>
+    </div>
   </div>
 </section>
 
@@ -92,6 +97,24 @@
   </ul>
 
 </section>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+
+  if (document.body.classList.contains("light")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+window.onload = function () {
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+  }
+};
+</script>
 
 </body>
 </html>

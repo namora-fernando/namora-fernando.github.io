@@ -33,14 +33,19 @@
 <body>
 
 <section class="project-hero">
-  <h1>Order Guardian</h1>
-  <p>Predictive Order Cancellation Risk System</p>
 
-  <img src="../assets/order_guardian-logo.png" alt="Order Guardian Logo" class="project-logo">
+  <div class="toggle" onclick="toggleTheme()">🌙</div>
 
-  <div class="buttons">
-    <a href="https://github.com/FTDS-assignment-bay/p2-final-project-ftds-051-rmt-group-001" target="_blank">GitHub Repo</a>
-    <a href="https://huggingface.co/spaces/Heizsenberg/order-guardian" target="_blank">Live Demo</a>
+  <div class="text">
+    <h1>Order Guardian</h1>
+    <p>Predictive Order Cancellation Risk System</p>
+
+    <img src="../assets/order_guardian-logo.png" alt="Order Guardian Logo" class="project-logo">
+
+    <div class="buttons">
+      <a href="https://github.com/FTDS-assignment-bay/p2-final-project-ftds-051-rmt-group-001" target="_blank">GitHub Repo</a>
+      <a href="https://huggingface.co/spaces/Heizsenberg/order-guardian" target="_blank">Live Demo</a>
+    </div>
   </div>
 </section>
 
@@ -88,6 +93,24 @@
   </ul>
 
 </section>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+
+  if (document.body.classList.contains("light")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+window.onload = function () {
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+  }
+};
+</script>
 
 </body>
 </html>

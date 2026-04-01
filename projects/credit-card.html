@@ -13,12 +13,12 @@
     }
 
     .project-content iframe {
-      width: 1400px;
+      width: 100%;
       height: 800px;
       border: none;
       display: block;
-      margin: auto;
-      border-radius: 8px;
+      margin: 30px auto;
+      border-radius: 10px;
     }
 
     .project-content img {
@@ -42,12 +42,17 @@
 <body>
 
 <section class="project-hero">
-  <h1>Credit Card Customer Analysis</h1>
-  <p>Active vs Churned Customer Behavior Analysis</p>
 
-  <div class="buttons">
-    <a href="https://github.com/namora-fernando/credit-card-transactions-analysis" target="_blank">GitHub Repo</a>
-    <a href="https://public.tableau.com/app/profile/fernando.namora/viz/P0M1_fernando_namora/CustomerTransactionComparison" target="_blank">View Dashboard</a>
+  <div class="toggle" onclick="toggleTheme()">🌙</div>
+
+  <div class="text">
+    <h1>Credit Card Customer Analysis</h1>
+    <p>Active vs Churned Customer Behavior Analysis</p>
+
+    <div class="buttons">
+      <a href="https://github.com/namora-fernando/credit-card-transactions-analysis" target="_blank">GitHub Repo</a>
+      <a href="https://public.tableau.com/app/profile/fernando.namora/viz/P0M1_fernando_namora/CustomerTransactionComparison" target="_blank">View Dashboard</a>
+    </div>
   </div>
 </section>
 
@@ -103,6 +108,24 @@
   <p class="image-caption">Hypothesis testing results confirming statistical significance.</p>
 
 </section>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+
+  if (document.body.classList.contains("light")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+window.onload = function () {
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+  }
+};
+</script>
 
 </body>
 </html>

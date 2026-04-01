@@ -27,12 +27,17 @@
 <body>
 
 <section class="project-hero">
-  <h1>Term Deposit Subscription Model</h1>
-  <p>Predictive Model for Marketing Campaign Optimization</p>
 
-  <div class="buttons">
-    <a href="https://github.com/namora-fernando/term-deposit-subscription-model" target="_blank">GitHub Repo</a>
-    <a href="https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model" target="_blank">Live Demo</a>
+  <div class="toggle" onclick="toggleTheme()">🌙</div>
+
+  <div class="text">
+    <h1>Term Deposit Subscription Model</h1>
+    <p>Predictive Model for Marketing Campaign Optimization</p>
+
+    <div class="buttons">
+      <a href="https://github.com/namora-fernando/term-deposit-subscription-model" target="_blank">GitHub Repo</a>
+      <a href="https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model" target="_blank">Live Demo</a>
+    </div>
   </div>
 </section>
 
@@ -87,6 +92,24 @@
   </ul>
 
 </section>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light");
+
+  if (document.body.classList.contains("light")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+window.onload = function () {
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light");
+  }
+};
+</script>
 
 </body>
 </html>

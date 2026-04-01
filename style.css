@@ -1,14 +1,22 @@
 body {
-  font-family: Arial;
   margin: 0;
-  background: #f5f5f5;
-}
-
-.hero {
-  text-align: center;
-  padding: 60px;
+  font-family: 'Segoe UI', sans-serif;
   background: #0f172a;
   color: white;
+}
+
+section {
+  padding: 60px 10%;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
 }
 
 .buttons a {
@@ -17,16 +25,196 @@ body {
   background: white;
   color: black;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
-.projects {
-  padding: 40px;
+/* ABOUT */
+.about {
+  background: #020617;
 }
 
+/* GRID (GENERAL) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* FEATURED PROJECTS GRID */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* CARD (GENERAL) */
 .card {
-  background: white;
+  background: #1e293b;
   padding: 20px;
-  margin: 15px 0;
-  border-radius: 8px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #94a3b8;
+}
+
+/* FEATURED CARD (BIG VERSION) */
+.featured-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  transition: 0.3s;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+  background: #334155;
+}
+
+.featured-card h3 {
+  font-size: 1.4rem;
+}
+
+.featured-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.featured-card span {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.featured-card .desc {
+  margin-top: 10px;
+}
+
+.featured-card .impact {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #cbd5f5;
+  font-weight: 500;
+}
+
+/* LINKS */
+.links a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 6px 12px;
+  background: #38bdf8;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.links a:hover {
+  background: #0ea5e9;
+}
+
+/* GENERAL IMPACT TEXT */
+.impact {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #cbd5f5;
+}
+
+/* LINKS IN TITLE */
+.card h3 a,
+.featured-card h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.card h3 a:hover,
+.featured-card h3 a:hover {
+  text-decoration: underline;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+}
+
+.contact-links a {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 14px;
+  background: #1e293b;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-links a:hover {
+  background: #334155;
+}
+
+/* PROJECT DETAIL PAGE */
+.project-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.project-section h2 {
+  margin-bottom: 10px;
+}
+
+.project-section p {
+  color: #cbd5f5;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.project-section ul {
+  padding-left: 20px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+.project-section li {
+  margin-bottom: 8px;
+}
+
+.project-hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.project-logo {
+  width: 160px;
+  margin: 20px 0;
+}
+
+.project-section img.architecture {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
 }

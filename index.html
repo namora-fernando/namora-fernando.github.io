@@ -7,34 +7,326 @@
 </head>
 <body>
 
-  <section class="hero">
-    <h1>Fernando Namora</h1>
-    <p>Data Analyst | Aspiring Data Scientist & Data Engineer</p>
-    <div class="buttons">
-      <a href="https://github.com/namora-fernando">GitHub</a>
-      <a href="#">Download CV</a>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <h1>Fernando Namora</h1>
+  <p>Data Science | Machine Learning | Data Engineering</p>
 
-  <section class="projects">
-    <h2>Featured Projects</h2>
+  <div class="buttons">
+    <a href="https://github.com/namora-fernando" target="_blank">GitHub</a>
+    <a href="assets/Fernando_Namora_CV.pdf" download>Download CV</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2>About Me</h2>
+
+  <p>
+    I have a background in Mathematics from Universitas Indonesia and focus on building practical data solutions using real-world datasets.
+  </p>
+
+  <p> 
+    I build end-to-end data solutions, from raw data pipelines to machine learning models and dashboards, working with real-world datasets to generate actionable business insights. 
+  </p>
+
+  <p>
+    My work combines analytics, machine learning, and data engineering workflows, from raw data pipelines to deployed models and dashboards.
+  </p>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="projects">
+  <h2>Featured Projects</h2>
+
+  <div class="featured-grid">
+
+    <div class="featured-card">
+      <h3>
+        <a href="projects/order-guardian.html">
+          Order Guardian (E-commerce Cancellation Prediction)
+        </a>
+      </h3>
+
+      <p class="desc">
+        Built an end-to-end predictive system to identify high-risk e-commerce orders using transactional data.
+        Designed a full pipeline from data ingestion, feature engineering, and model training to deployment and business dashboarding.
+      </p>
+
+      <p class="impact">
+        Impact: Enables proactive risk detection and supports operational decision-making.
+      </p>
+
+      <span>Python • Airflow • Scikit-learn • Streamlit • Tableau</span>
+
+      <div class="links">
+        <a href="https://huggingface.co/spaces/Heizsenberg/order-guardian" target="_blank">Live Demo</a>
+        <a href="https://github.com/FTDS-assignment-bay/p2-final-project-ftds-051-rmt-group-001" target="_blank">View Code</a>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <h3>
+        <a href="projects/monitoring-pipeline.html">
+          E-Commerce Monitoring Pipeline
+        </a>
+      </h3>
+
+      <p class="desc">
+      Built an end-to-end data pipeline for e-commerce monitoring using Airflow, Great Expectations, and Elasticsearch.
+      </p>
+
+      <p class="impact">
+      Impact: Enables automated data processing and continuous business monitoring for sales and customer retention.
+      </p>
+
+      <span>Python • Airflow • Elasticsearch • Kibana • Docker • Great Expectations</span>
+
+      <div class="links">
+        <a href="https://github.com/namora-fernando/ecommerce-sales-retention-monitoring-pipeline" target="_blank">View Code</a>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <h3>
+        <a href="projects/term-deposit.html">
+          Term Deposit Subscription Model
+        </a>
+      </h3>
+
+      <p class="desc">
+        Built a machine learning model to predict customer subscription to term deposits using historical banking data, including feature engineering, model comparison, and deployment.
+      </p>
+
+      <p class="impact">
+        Impact: Improves marketing efficiency by targeting high-probability customers and reducing wasted outreach.
+      </p>
+
+      <span>Python • Scikit-learn • Feature Engineering • Streamlit • Hugging Face</span>
+
+      <div class="links">
+        <a href="https://huggingface.co/spaces/namorafn7/term-deposit-subscription-model" target="_blank">Live Demo</a>
+        <a href="https://github.com/namora-fernando/term-deposit-subscription-model" target="_blank">View Code</a>
+      </div>
+    </div>
+
+    <div class="featured-card">
+      <h3>
+        <a href="projects/credit-card.html">
+          Credit Card Customer Analysis
+        </a>
+      </h3>
+
+      <p class="desc">
+        Analyzed transaction behavior differences between active and churned customers using EDA, statistical testing, and interactive Tableau dashboards.
+      </p>
+
+      <p class="impact">
+        Impact: Identifies key behavioral differences to support customer retention strategies.
+      </p>
+
+      <span>Python • EDA • Statistical Analysis • Tableau</span>
+
+      <div class="links">
+        <a href="https://public.tableau.com/app/profile/fernando.namora/viz/P0M1_fernando_namora/CustomerTransactionComparison" target="_blank">Dashboard</a>
+        <a href="https://github.com/namora-fernando/credit-card-transactions-analysis" target="_blank">View Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ADDITIONAL PROJECTS -->
+<section class="additional-projects">
+  <h2>Additional Projects</h2>
+
+  <div class="grid">
 
     <div class="card">
-      <h3>Order Guardian</h3>
-      <p>End-to-end ML system for e-commerce cancellation prediction.</p>
+      <h3>
+        <a href="projects/inflation-risk.html">
+          Inflation Risk Analysis
+        </a>
+      </h3>
+
+      <p>
+        Developed an end-to-end analytics workflow to assess global inflation risk using World Bank macroeconomic data.
+        Built a composite risk index and delivered insights through a multi-page Power BI dashboard.
+      </p>
+
+      <p class="impact">
+        Impact: Enables macro-level risk monitoring and cross-country comparison for economic analysis.
+      </p>
+
+      <span>Python • Power BI • Pandas • Feature Engineering • Data Visualization</span>
+
+      <div class="links">
+        <a href="https://github.com/namora-fernando/inflation-risk-analysis" target="_blank">View Code</a>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Monitoring Pipeline</h3>
-      <p>Automated ETL pipeline with Airflow & data validation.</p>
+      <h3>
+        <a href="projects/bank-loan.html">
+          Bank Loan Portfolio Analysis
+        </a>
+      </h3>
+
+      <p>
+        Analyzed a retail bank loan portfolio to understand borrower risk characteristics and segment-level credit risk patterns.
+        Combined Python-based EDA with Tableau dashboards to support risk monitoring.
+      </p>
+
+      <p class="impact">
+        Impact: Identifies high-risk borrower segments and supports data-driven credit risk assessment.
+      </p>
+
+      <span>Python • Tableau • Pandas • Risk Analysis • Data Visualization</span>
+
+      <div class="links">
+        <a href="https://github.com/namora-fernando/bank-loan-portfolio-analysis" target="_blank">View Code</a>
+      </div>
     </div>
 
     <div class="card">
-      <h3>Term Deposit Model</h3>
-      <p>ML model predicting customer subscription likelihood.</p>
+      <h3>
+        <a href="projects/justy.html">
+          Justy Business Analytics
+        </a>
+      </h3>
+
+      <p>
+      End-to-end business analytics solution combining automated data extraction and Power BI dashboards for operational monitoring.
+      </p>
+
+      <p class="impact">
+      Impact: Eliminated manual data retrieval and enabled structured analysis of sales performance, menu trends, and customer behavior.
+      </p>
+
+      <span>Python • Selenium • Power BI • Pandas • Excel • DAX</span>
+
+      <div class="links">
+        <a href="https://github.com/namora-fernando/justy-sales-dashboard" target="_blank">Dashboard Repo</a>
+        <a href="https://github.com/namora-fernando/justy-transactions-scraper" target="_blank">Scraper Code</a>
+      </div>
     </div>
 
-  </section>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="experience">
+  <h2>Experience</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Data Operations & Analytics Support</h3>
+      <p>ECU Worldwide</p>
+      <p>Analyzed booking trends and built Excel dashboards for customer segmentation and route performance.</p>
+    </div>
+
+    <div class="card">
+      <h3>Actuarial Data Analyst</h3>
+      <p>PT Asuransi Simas Jiwa</p>
+      <p>Built pricing models and automated Excel tools for insurance product analysis.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education">
+  <h2>Education</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Universitas Indonesia</h3>
+      <p>Bachelor of Mathematics • GPA: 3.77 / 4.00</p>
+    </div>
+
+    <div class="card">
+      <h3>Hacktiv8 Full-Time Data Science Bootcamp</h3>
+      <p>Final Score: 97.34%</p>
+
+      <ul>
+        <li>Data Analysis: EDA, statistical testing, and business insight generation</li>
+        <li>Machine Learning: classification, regression, model evaluation, and deployment</li>
+        <li>Data Engineering: ETL pipelines using Airflow, data validation with Great Expectations</li>
+        <li>Tools: Python (Pandas, NumPy, Scikit-learn), SQL, Tableau, Power BI</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="certifications">
+  <h2>Certifications</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <p><strong>BNSP Certified Data Analyst</strong></p>
+      <span>National professional certification in data analysis</span>
+    </div>
+
+    <div class="card">
+      <p><strong>Hacktiv8 Data Science Bootcamp</strong></p>
+      <span>Final Score: 97.34% (Hands-on projects in ML, analytics, and data engineering)</span>
+    </div>
+
+    <div class="card">
+      <p><strong>HackerRank SQL (Advanced)</strong></p>
+      <span>
+        Proficient in complex queries, joins, window functions, and analytical SQL
+      </span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+  <h2>Skills</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Machine Learning</h3>
+      <p>Predictive modeling, feature engineering, and evaluation.</p>
+      <span>Scikit-learn • TensorFlow • NLP</span>
+    </div>
+
+    <div class="card">
+      <h3>Data Engineering</h3>
+      <p>Pipeline design, orchestration, and data validation.</p>
+      <span>Airflow • Docker • PostgreSQL • Great Expectations</span>
+    </div>
+
+    <div class="card">
+      <h3>Analytics & Visualization</h3>
+      <p>Exploration, insight generation, and dashboarding.</p>
+      <span>Pandas • Tableau • Power BI • Kibana</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-links">
+    <a href="mailto:namorafn7@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/fernando-namora" target="_blank">LinkedIn</a>
+    <a href="https://github.com/namora-fernando" target="_blank">GitHub</a>
+    <a href="https://wa.me/6285781172005" target="_blank">WhatsApp</a>
+  </div>
+
+</section>
 
 </body>
 </html>

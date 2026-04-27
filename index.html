@@ -163,7 +163,30 @@
 
   <h2>Additional Projects</h2>
 
-  <div class="grid">
+  <div class="projects-grid">
+
+    <div class="card">
+      <h3>
+        <a href="projects/imdb-sentiment.html">
+          IMDb Sentiment Analysis
+        </a>
+      </h3>
+
+      <p>
+        Built an end-to-end NLP model to classify IMDb movie reviews into positive and negative sentiment using Bidirectional LSTM. 
+        Implemented text preprocessing, custom token handling, and Word2Vec embeddings to improve model generalization.
+      </p>
+
+      <p class="impact">
+        Impact: Enables automated sentiment classification for large-scale review data, supporting content analysis and user feedback monitoring.
+      </p>
+
+      <span>Python • NLP • TensorFlow • Keras • NLTK • Gensim (Word2Vec) • Deep Learning</span>
+
+      <div class="links">
+        <a href="https://github.com/namora-fernando/sentiment-analysis-bilstm-word2vec" target="_blank">View Code</a>
+      </div>
+    </div>
 
     <div class="card">
       <h3>
@@ -406,7 +429,7 @@ function toggleTheme() {
 }
 
 window.onload = function () {
-  if (localStorage.getItem("theme") === "light") {
+  if (localStorage.getItem("theme") !== "dark") {
     document.body.classList.add("light");
   }
 };

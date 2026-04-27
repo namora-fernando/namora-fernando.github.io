@@ -72,6 +72,14 @@ p { line-height: 1.6; color: var(--subtext); }
   gap: 25px;
 }
 
+/* PROJECTS GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  align-items: start;
+}
+
 /* FEATURED GRID */
 .featured-grid {
   display: grid;
@@ -91,7 +99,6 @@ p { line-height: 1.6; color: var(--subtext); }
 .card {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .card:hover,
